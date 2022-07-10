@@ -1,0 +1,41 @@
+{
+  "readmeUrl": "https://github.com/l33th/l33th/blob/main/README.md",
+  "title": "WMꞏTerminal",
+  "name": "Wilgerth Mouton",
+  "ascii": "W Mouton",
+  "social": {
+    "github": "l33th",
+    "linkedin": "wmouton"
+  },
+  "email": "wmouton.dev@email.com",
+  "ps1_hostname": "terminal42",
+  "ps1_username": "guest",
+  "projects": "projects",
+  "hobbies": "hobbies",
+  "landingPage": "https://wmouton.herokuapp.com",
+  "portfolio": "https://wmouton.netlify.app",
+  "donate_urls": {
+    "kofi": "https://ko-fi.com/wmouton",
+    "eth": "https://wmouton-eth.netlify.app"
+  },
+  "colors": {
+    "light": {
+      "background": "#FFFFDB",
+      "foreground": "#282a36",
+      "yellow": "#ffb86c",
+      "green": "#50fa7b",
+      "gray": "#8B6BB9",
+      "blue": "#67AFC0",
+      "red": "#ff5555"
+    },
+    "dark": {
+      "background": "#282a36",
+      "foreground": "#f8f8f2",
+      "yellow": "#ffb86c",
+      "green": "#50fa7b",
+      "gray": "#bd93f9",
+      "blue": "#8be9fd",
+      "red": "#ff5555"
+    }
+  }
+}
