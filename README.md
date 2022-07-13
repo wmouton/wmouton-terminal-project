@@ -16,4 +16,4 @@ npm run dev
 ## Deploy on Vercel
 
 Connecting your GitHub account to Vercel will automatically deploy the repo, 
-it speeds up deployment and makes it much easier.
+it speeds up deployment and makes it much easier to get your app up and running.
