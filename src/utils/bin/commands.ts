@@ -260,11 +260,11 @@ export const curl_api = async (args: string[]): Promise<string> => {
 };
 
 export const status = async (args: string[]): Promise<string> => {
-  return '\n\Status: <span style="color:cyan">Available For Hire</span>\n\n';
+  return '\nStatus: <span style="color:cyan">Available For Hire</span>\n\n';
 };
 
 export const name = async (args: string[]): Promise<string> => {
-  return '\n\Name: <span style="color:cyan">W Mouton</span>\n\n';
+  return '\nName: <span style="color:cyan">W Mouton</span>\n\n';
 };
 
 export const wallets = async (args: string[]): Promise<string> => {
