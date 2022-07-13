@@ -76,6 +76,9 @@ export const readme = async (args: string[]): Promise<string> => {
 
 export const documentation = async (args: string[]): Promise<string> => {
   return `
+<span style='color: cyan'>status</span>
+    - Displays current status.
+
 <span style='color: cyan'>about</span>
     - Displays some information about me.
 
@@ -216,7 +219,7 @@ export const curl_api = async (args: string[]): Promise<string> => {
         "image": "https://wmouton.netlify.app/static/media/l33th-code-lite.f1405f71.png"
       },
       "personal": {
-        "jobStatus": "Freelance",
+        "jobStatus": "Available for hire",
         "phoneNumber": "+27 61 446 7497",
         "location": "Northern Cape, SA",
         "currency": "ZAR",
@@ -254,6 +257,10 @@ export const curl_api = async (args: string[]): Promise<string> => {
       }
     }
   ]\n\n`;
+};
+
+export const status = async (args: string[]): Promise<string> => {
+  return '\n\Status: <span style="color:cyan">Available For Hire</span>\n\n';
 };
 
 export const name = async (args: string[]): Promise<string> => {
