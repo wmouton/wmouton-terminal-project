@@ -124,6 +124,9 @@ export const documentation = async (args: string[]): Promise<string> => {
 <span style='color: cyan'>experience</span>
     - Shows my previous occupations.
 
+<span style='color: cyan'>hackerrank</span>
+    - Opens my hackerrank page.
+
 <span style='color: cyan'>github</span>
     - Opens my github page.
 
@@ -247,6 +250,7 @@ export const curl_api = async (args: string[]): Promise<string> => {
       "socials": {
         "linkedIn": "https://linkedin.com/in/wmouton",
         "github": "https://github.com/l33th",
+        "hackerrank": "https://hackerrank.com/wmouton_dev",
         "twitter": "https://twitter.com/l33th_dev",
         "skype": "https://join.skype.com/invite/zciaB7cZUOha",
         "whatsapp": "https://wa.me/message/YEQKXSGRNOZ7P1",
@@ -274,6 +278,11 @@ export const brand = async (args: string[]): Promise<string> => {
 
 export const hobbies = async (args: string[]): Promise<string> => {
   return '\n<<<=======>>>\n&nbsp;&nbsp;&nbsp;<span style="color: cyan">HOBBIES</span>\n<<<=======>>>\n\nHobbies: <span style="color: cyan">Reading, Coding, Internet Browsing\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Computer Gaming, Exercise.</span>\n\n';
+};
+
+export const hackerrank = async (args: string[]): Promise<string> => {
+  window.open(`https://hackerrank.com/${config.social.hackerrank}/`);
+  return 'Opening hackerrank...';
 };
 
 export const github = async (args: string[]): Promise<string> => {
