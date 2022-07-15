@@ -413,7 +413,7 @@ export const sudo = async (args?: string[]): Promise<string> => {
 export const banner = (args?: string[]): string => {
   return `
   <div style='display: inline-flex; align-items: center'>
-  <span style='font-size: 30px;'>
+  <span style='font-size: 30px; color: #D3D7CF;'>
  ██╗    ██╗███╗   ███╗
  ██║    ██║████╗ ████║
  ██║ █╗ ██║██╔████╔██║
@@ -421,9 +421,10 @@ export const banner = (args?: string[]): string => {
  ╚███╔███╔╝██║ ╚═╝ ██║
   ╚══╝╚══╝ ╚═╝     ╚═╝
               <span style='font-size: 10px; text-align: right !important; margin-top: 0px'>Copyright © 2022, WMouton</span></span>\n
+  </span>
   </div>
   <p style='padding-top: 0px; padding-bottom: 0px;'>
-    <span style='color: yellow'>PLEASE VIEW IN DESKTOP FOR A BETTER EXPERIENCE.</span>\n
+    <span style='color: yellow'>PLEASE VIEW IN DESKTOP FOR A BETTER EXPERIENCE</span>\n
     Type '<span style='color: #02F058;'>help</span>' to see the list of available commands.
     Type '<span style='color: #02F058;'>sumfetch</span>' to display summary.
     Type '<span style='color: #02F058;'>website</span>' or click <u><a style='color: cyan; underline' href='${config.landingPage}'>here</a></u> for the landing page.
