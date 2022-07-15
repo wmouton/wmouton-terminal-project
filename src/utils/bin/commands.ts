@@ -127,6 +127,9 @@ export const documentation = async (args: string[]): Promise<string> => {
 <span style='color: cyan'>experience</span>
     - Shows my previous occupations.
 
+<span style='color: cyan'>hackerrank</span>
+    - Opens my hackerrank page.
+
 <span style='color: cyan'>github</span>
     - Opens my github page.
 
@@ -250,6 +253,7 @@ export const curl_api = async (args: string[]): Promise<string> => {
       "socials": {
         "linkedIn": "https://linkedin.com/in/wmouton",
         "github": "https://github.com/l33th",
+        "hackerrank": "https://hackerrank.com/wmouton_dev",
         "twitter": "https://twitter.com/l33th_dev",
         "skype": "https://join.skype.com/invite/zciaB7cZUOha",
         "whatsapp": "https://wa.me/message/YEQKXSGRNOZ7P1",
@@ -281,6 +285,11 @@ export const brand = async (args: string[]): Promise<string> => {
 
 export const hobbies = async (args: string[]): Promise<string> => {
   return '\n<<<=======>>>\n&nbsp;&nbsp;&nbsp;<span style="color: cyan">HOBBIES</span>\n<<<=======>>>\n\nHobbies: <span style="color: cyan">Reading, Coding, Internet Browsing\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Computer Gaming, Exercise.</span>\n\n';
+};
+
+export const hackerrank = async (args: string[]): Promise<string> => {
+  window.open(`https://hackerrank.com/${config.social.hackerrank}/`);
+  return 'Opening hackerrank...';
 };
 
 export const github = async (args: string[]): Promise<string> => {
@@ -411,7 +420,7 @@ export const sudo = async (args?: string[]): Promise<string> => {
 export const banner = (args?: string[]): string => {
   return `
   <div style='display: inline-flex; align-items: center'>
-  <span style='font-size: 30px;'>
+  <span style='font-size: 30px; color: #D3D7CF;'>
  ██╗    ██╗███╗   ███╗
  ██║    ██║████╗ ████║
  ██║ █╗ ██║██╔████╔██║
@@ -419,9 +428,10 @@ export const banner = (args?: string[]): string => {
  ╚███╔███╔╝██║ ╚═╝ ██║
   ╚══╝╚══╝ ╚═╝     ╚═╝
               <span style='font-size: 10px; text-align: right !important; margin-top: 0px'>Copyright © 2022, WMouton</span></span>\n
+  </span>
   </div>
   <p style='padding-top: 0px; padding-bottom: 0px;'>
-    <span style='color: yellow'>PLEASE VIEW IN DESKTOP FOR A BETTER EXPERIENCE.</span>\n
+    <span style='color: yellow'>PLEASE VIEW IN DESKTOP FOR A BETTER EXPERIENCE</span>\n
     Type '<span style='color: #02F058;'>help</span>' to see the list of available commands.
     Type '<span style='color: #02F058;'>sumfetch</span>' to display summary.
     Type '<span style='color: #02F058;'>website</span>' or click <u><a style='color: cyan; underline' href='${config.landingPage}'>here</a></u> for the landing page.
