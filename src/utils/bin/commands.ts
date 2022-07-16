@@ -38,11 +38,10 @@ export const portfolio = async (args: string[]): Promise<string> => {
 
 // About
 export const about = async (args: string[]): Promise<string> => {
-  return `<br/><span style='color: cyan'>Hello, I am ${config.name}. 
-Welcome to my terminal!</span>
+  return `<br/><span style='color: cyan'>Hello, I am ${config.name}. Welcome to my terminal!</span>
 <br/> <span style='color: cyan'>>></span> More about me:
 
-<span style='color: lightgreen'>College graduate and motivated Software Engineer \nbased in SA with a main focus on building ReactJS\nWeb Applications and Development using the \nMERN (MongoDB, ExpressJS, ReactJS, NodeJS) Stack.\nI do Back-End Development using the Go programming \nlanguage and in my spare time I do Blockchain Development. <br /><br/>I am also an Artificial Intelligence Researcher and \nI love Artificial Intelligence and its limitless potential, \nI believe it to be the future of IoT and Web3. I don't see \nmyself as a "programmer", I see myself as a problem solver, \nand I use programming as a tool to solve problems. I have a \npassion for technology and my main goal is to build great \nsoftware solutions with the potential to change the world.</span>
+<span style='color: lightgreen'>I am a self-taught full-stack software engineer with a passion \nfor technology. I build sleek, modern and stylish, fast and \nscalable web applications using advanced technologies like \nReactJS, TypeScript, NextJS, SASS, Tailwind, Bootstrap and Go. \nI am familiar with Machine Learning and Blockchain Development \nand I have been a Linux user for over 7 years. I use Linux as \nmy primary operating system and as a daily driver. <br />\nI love Artificial Intelligence and its limitless potential, \nI believe it to be the future of IoT and Web3. I don't see \nmyself as a "programmer", I see myself as a problem solver, \nand I use programming as a tool to solve problems. I have a \npassion for technology and my main goal is to build great \nsoftware solutions with the potential to change the world.</span>
 <br/>
 '<span style='color: cyan'>sumfetch</span>' - short summary.
 '<span style='color: cyan'>github</span>' - view my github profile.
@@ -424,7 +423,7 @@ export const banner = (args?: string[]): string => {
   </span>
   </div>
   <p style='padding-top: 0px; padding-bottom: 0px;'>
-    <span style='color: yellow'>PLEASE VIEW IN DESKTOP FOR A BETTER EXPERIENCE</span>\n
+    <span style='color: yellow'>PLEASE VIEW ON DESKTOP FOR A BETTER EXPERIENCE</span>\n
     Type '<span style='color: #02F058;'>help</span>' to see the list of available commands.
     Type '<span style='color: #02F058;'>sumfetch</span>' to display summary.
     Type '<span style='color: #02F058;'>website</span>' or click <u><a style='color: cyan; underline' href='${config.landingPage}'>here</a></u> for the landing page.
