@@ -88,7 +88,7 @@ export const documentation = async (args: string[]): Promise<string> => {
     - Displays the WM banner.
 
 <span style='color: cyan'>bing</span>
-    - Opens bing search (example: bing harry potter)
+    - Opens a bing search (example: bing harry potter)
 
 <span style='color: cyan'>brand</span>
     - Displays the official L33TH brand.
@@ -112,7 +112,7 @@ export const documentation = async (args: string[]): Promise<string> => {
     - The donate command opens the donation options.
 
 <span style='color: cyan'>duckduckgo</span>
-    - Opens duckduckgo search (example: duckduckgo harry potter)
+    - Opens a duckduckgo search (example: duckduckgo harry potter)
 
 <span style='color: cyan'>echo</span>
     - Echos any command back to you (example: echo hello world)
@@ -133,7 +133,7 @@ export const documentation = async (args: string[]): Promise<string> => {
     - Opens my github page.
 
 <span style='color: cyan'>google</span>
-    - Opens google search (example: google harry potter)
+    - Opens a google search (example: google harry potter)
 
 <span style='color: cyan'>help</span>
     - The help command displays all available commands.
@@ -151,7 +151,7 @@ export const documentation = async (args: string[]): Promise<string> => {
     - Displays this terminal administrator's name.
 
 <span style='color: cyan'>nvim</span>
-    - Opens the nvim text editor.
+    - Opens the nvim text editor (If available).
 
 <span style='color: cyan'>website</span>
     - Opens my official developer landing page website.
@@ -172,7 +172,7 @@ export const documentation = async (args: string[]): Promise<string> => {
     - Displays my professional skillset.
 
 <span style='color: cyan'>sublime</span>
-    - Opens the sublime-text text editor.
+    - Opens the sublime-text text editor (If available).
 
 <span style='color: cyan'>sudo</span>
     - This sudo command attempts to activate root privileges.
@@ -181,10 +181,10 @@ export const documentation = async (args: string[]): Promise<string> => {
     - This will display a short summary about me.
 
 <span style='color: cyan'>vi</span>
-    - Opens the vi-text text editor.
+    - Opens the vi-text text editor (If available).
 
 <span style='color: cyan'>vim</span>
-    - Opens the vim-text text editor.
+    - Opens the vim-text text editor (If available).
 
 <span style='color: cyan'>vscode</span>
     - Opens the vscode ide download page.
@@ -238,9 +238,9 @@ export const curl_api = async (args: string[]): Promise<string> => {
         "aiTools": "Anaconda-Navigator, Jupyter Notebook, Google Colab, TensorFlow, Keras, Numpy, Pandas, Scikit-Learn, PyTorch."
       },
       "favDevStack": {
-        "frontEnd": "HTML, CSS, JavaScript, ReactJS, TypeScript, SASS, Tailwind, Bootstrap, MUI",
-        "backend": "Linux, Go, Python, Solidity, Bash, NodeJS, MongoDB, PostgreSQL, SQLite3, Postman.",
-        "familiar": "C, C++, C#, Kotlin, React Native, Ruby, JQuery, Bulma, VueJS, GatsbyJS, Graphql, Docker."
+        "frontEnd": "HTML, CSS, JavaScript, ReactJS, TypeScript, NextJS, SASS, Tailwind, Bootstrap, MUI",
+        "backend": "Linux, Go, Python, Solidity, MongoDB, PostgreSQL, SQLite3, Postman.",
+        "familiar": "C, Bash, NodeJS, React Native, JQuery, Bulma, GatsbyJS, Graphql, Docker."
       },
       "os": {
         "primaryOS": "Ubuntu",
@@ -338,8 +338,8 @@ export const api = async (args: string[]): Promise<string> => {
 
 export const skills = async (args: string[]): Promise<string> => {
   return `\n<<<========>>>\n\t<span style="color: cyan">SKILLS</span>\n<<<========>>>\n\nFront-End: <span style="color: cyan">HTML, CSS, JavaScript, ReactJS, TypeScript\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SASS, Tailwind, Bootstrap, MUI.</span>\n
-Back-End: <span style="color: cyan">&nbsp;Linux, Go, Python, Solidity, Bash, NodeJS\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MongoDB, PostgreSQL, SQLite3, Postman, Mockoon.</span>\n
-Familiar: <span style="color: cyan">&nbsp;C, C++, C#, Kotlin, React Native, Ruby, JQuery\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bulma, VueJS, GatsbyJS, Graphql, Docker.</span>\n
+Back-End: <span style="color: cyan">&nbsp;Linux, Go, Python, Solidity, Bash, MongoDB\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NodeJS, PostgreSQL, SQLite3, Postman, Mockoon.</span>\n
+Familiar: <span style="color: cyan">&nbsp;C, React Native, JQuery, Bulma, VueJS\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GatsbyJS, Graphql, Docker.</span>\n
   `;
 };
 
