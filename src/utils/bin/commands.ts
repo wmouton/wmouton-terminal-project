@@ -425,7 +425,7 @@ export const banner = (args?: string[]): string => {
   <p style='padding-top: 0px; padding-bottom: 0px;'>
     <span style='color: yellow'>PLEASE VIEW ON DESKTOP FOR A BETTER EXPERIENCE</span>\n
     Type '<span style='color: #02F058;'>help</span>' to see the list of available commands.
-    Type '<span style='color: #02F058;'>sumfetch</span>' to display summary.
+    Type '<span style='color: #02F058;'>sumfetch</span>' for a short summary of me.
     Type '<span style='color: #02F058;'>website</span>' or click <u><a style='color: cyan; underline' href='${config.landingPage}'>here</a></u> for the landing page.
     Type '<span style='color: #02F058'>documentation</span>' for the full documentation.
   </p>
