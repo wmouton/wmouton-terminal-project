@@ -43,6 +43,7 @@ export const about = async (args: string[]): Promise<string> => {
 <br/> <span style='color: cyan'>>></span> More about me:
 
 <span style='color: lightgreen'>I am a full-stack software engineer with a passion \nfor technology. I build sleek, modern and stylish, fast and \nscalable web applications using advanced technologies like \nReactJS, TypeScript, NextJS, SASS, TailwindCSS, Chakra-UI and Go. \nI am familiar with Machine Learning and Blockchain Development \nand I have been a Linux user for over 7 years. I use Linux as \nmy primary operating system and as a daily driver. <br />\nI love Artificial Intelligence and its limitless potential, \nI believe it to be the future of IoT and Web3. I don't see \nmyself as a "programmer", I see myself as a problem solver, \nand I use programming as a tool to solve problems. I have a \npassion for technology and my main goal is to build great \nsoftware solutions with the potential to change the world.</span>
+
 <br/>
 '<span style='color: cyan'>sumfetch</span>' - short summary.
 '<span style='color: cyan'>github</span>' - view my github profile.
@@ -76,6 +77,9 @@ export const readme = async (args: string[]): Promise<string> => {
 
 export const documentation = async (args: string[]): Promise<string> => {
   return `
+<span style='color: cyan'>status</span>
+    - Displays current status.
+
 <span style='color: cyan'>about</span>
     - Displays some information about me.
 
@@ -217,7 +221,7 @@ export const curl_api = async (args: string[]): Promise<string> => {
         "image": "https://wmouton.netlify.app/static/media/l33th-code-lite.f1405f71.png"
       },
       "personal": {
-        "jobStatus": "Freelance",
+        "jobStatus": "Available for hire",
         "phoneNumber": "+27 61 446 7497",
         "location": "Northern Cape, SA",
         "currency": "ZAR",
@@ -256,6 +260,10 @@ export const curl_api = async (args: string[]): Promise<string> => {
       }
     }
   ]\n\n`;
+};
+
+export const status = async (args: string[]): Promise<string> => {
+  return '\nStatus: <span style="color:cyan">Available For Hire</span>\n\n';
 };
 
 export const name = async (args: string[]): Promise<string> => {
@@ -424,7 +432,7 @@ export const banner = (args?: string[]): string => {
   <p style='padding-top: 0px; padding-bottom: 0px;'>
     <span style='color: yellow'>PLEASE VIEW ON DESKTOP FOR A BETTER EXPERIENCE</span>\n
     Type '<span style='color: #02F058;'>help</span>' to see the list of available commands.
-    Type '<span style='color: #02F058;'>sumfetch</span>' to display summary.
+    Type '<span style='color: #02F058;'>sumfetch</span>' for a short summary of me.
     Type '<span style='color: #02F058;'>website</span>' or click <u><a style='color: cyan; underline' href='${config.landingPage}'>here</a></u> for the landing page.
     Type '<span style='color: #02F058'>documentation</span>' for the full documentation.
   </p>
