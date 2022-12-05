@@ -11,10 +11,10 @@
   "email": "wmouton.dev@email.com",
   "ps1_hostname": "terminal42",
   "ps1_username": "guest",
-  "projects": "projects",
+  "projects": "https://github.com/l33th?tab=repositories",
   "hobbies": "hobbies",
-  "landingPage": "https://wmouton.herokuapp.com",
-  "portfolio": "https://wmouton.netlify.app",
+  "landingPage": "https://wmouton.netlify.app",
+  "portfolio": "https://wmouton.vercel.app",
   "donate_urls": {
     "kofi": "https://ko-fi.com/wmouton",
     "eth": "https://wmouton-eth.netlify.app"
