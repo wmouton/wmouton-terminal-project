@@ -13,7 +13,8 @@ export const help = async (args: string[]): Promise<string> => {
     if (i % 6 === 0) {
       c += Object.keys(bin).sort()[i - 1] + '\n';
     } else {
-      c += Object.keys(bin).sort()[i - 1] + ' <span style="color: #fff">ꞏ</span> ';
+      c +=
+        Object.keys(bin).sort()[i - 1] + ' <span style="color: #fff">ꞏ</span> ';
     }
   }
   return `\n<span style='color: #02F058'>Welcome! Here are all the available commands:</span>
@@ -41,7 +42,7 @@ export const about = async (args: string[]): Promise<string> => {
   return `<br/><span style='color: cyan'>Hello, I am ${config.name}. Welcome to my terminal!</span>
 <br/> <span style='color: cyan'>>></span> More about me:
 
-<span style='color: lightgreen'>I am a self-taught full-stack software engineer with a passion \nfor technology. I build sleek, modern and stylish, fast and \nscalable web applications using advanced technologies like \nReactJS, TypeScript, NextJS, SASS, Tailwind, Bootstrap and Go. \nI am familiar with Machine Learning and Blockchain Development \nand I have been a Linux user for over 7 years. I use Linux as \nmy primary operating system and as a daily driver. <br />\nI love Artificial Intelligence and its limitless potential, \nI believe it to be the future of IoT and Web3. I don't see \nmyself as a "programmer", I see myself as a problem solver, \nand I use programming as a tool to solve problems. I have a \npassion for technology and my main goal is to build great \nsoftware solutions with the potential to change the world.</span>
+<span style='color: lightgreen'>I am a full-stack software engineer with a passion \nfor technology. I build sleek, modern and stylish, fast and \nscalable web applications using advanced technologies like \nReactJS, TypeScript, NextJS, SASS, TailwindCSS, Chakra-UI and Go. \nI am familiar with Machine Learning and Blockchain Development \nand I have been a Linux user for over 7 years. I use Linux as \nmy primary operating system and as a daily driver. <br />\nI love Artificial Intelligence and its limitless potential, \nI believe it to be the future of IoT and Web3. I don't see \nmyself as a "programmer", I see myself as a problem solver, \nand I use programming as a tool to solve problems. I have a \npassion for technology and my main goal is to build great \nsoftware solutions with the potential to change the world.</span>
 <br/>
 '<span style='color: cyan'>sumfetch</span>' - short summary.
 '<span style='color: cyan'>github</span>' - view my github profile.
@@ -64,7 +65,7 @@ export const email = async (args: string[]): Promise<string> => {
 };
 
 export const projects = async (args: string[]): Promise<string> => {
-  window.open(`https://wmouton.netlify.app/${config.projects}/`);
+  window.open(`${config.projects}/`);
   return 'Opening projects...';
 };
 
@@ -194,11 +195,9 @@ export const documentation = async (args: string[]): Promise<string> => {
 `;
 };
 
-
 export const experience = async (args: string[]): Promise<string> => {
-  return '\n\Occupations: <span style="color:cyan">Software Engineer, Web Developer, Web Designer\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Linux Security Expert, Blockchain Specialist\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Technology Consultant, Business Consultant\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CTO, CEO.</span>\n\n';
+  return '\nOccupations: <span style="color:cyan">Software Engineer, Web Developer, Web Designer\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Linux Security Expert, Blockchain Specialist\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Technology Consultant, Business Consultant\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CTO, CEO.</span>\n\n';
 };
-
 
 export const curl_api = async (args: string[]): Promise<string> => {
   return `\n[
@@ -260,7 +259,7 @@ export const curl_api = async (args: string[]): Promise<string> => {
 };
 
 export const name = async (args: string[]): Promise<string> => {
-  return '\n\Name: <span style="color:cyan">W Mouton</span>\n\n';
+  return '\nName: <span style="color:cyan">W Mouton</span>\n\n';
 };
 
 export const wallets = async (args: string[]): Promise<string> => {
@@ -325,14 +324,14 @@ export const whoami = async (args: string[]): Promise<string> => {
 };
 
 export const api = async (args: string[]): Promise<string> => {
-  window.open('https://l33th.herokuapp.com/info');
+  window.open('https://l33th.vercel.app/info');
   return `Opening The Official L33TH API...`;
 };
 
 export const skills = async (args: string[]): Promise<string> => {
-  return `\n<<<========>>>\n\t<span style="color: cyan">SKILLS</span>\n<<<========>>>\n\nFront-End: <span style="color: cyan">HTML, CSS, JavaScript, ReactJS, TypeScript\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SASS, Tailwind, Bootstrap, MUI.</span>\n
+  return `\n<<<========>>>\n\t<span style="color: cyan">SKILLS</span>\n<<<========>>>\n\nFront-End: <span style="color: cyan">JavaScript, ReactJS, TypeScript, SASS,\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TailwindCSS, Framer-Motion, Chakra-UI.</span>\n
 Back-End: <span style="color: cyan">&nbsp;Linux, Go, Python, Solidity, Bash, MongoDB\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NodeJS, PostgreSQL, SQLite3, Postman, Mockoon.</span>\n
-Familiar: <span style="color: cyan">&nbsp;C, React Native, JQuery, Bulma, VueJS\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GatsbyJS, Graphql, Docker.</span>\n
+Familiar: <span style="color: cyan">&nbsp;C, React Native, Chakra-UI, Bulma, Solidity\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GatsbyJS, Graphql, Docker.</span>\n
   `;
 };
 
